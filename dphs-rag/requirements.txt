@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+pypdf
+faiss-cpu
+PyMuPDF
+pytesseract
+Pillow
+sentence-transformers
+python-dotenv
+groq
+numpy

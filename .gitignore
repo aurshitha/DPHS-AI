@@ -1,0 +1,24 @@
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Vector database / embeddings
+vectorstore/
+
+# Data files (optional - if PDFs/docs are large/private)
+data/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+uploads/
+
+# Logs
+temp_files
