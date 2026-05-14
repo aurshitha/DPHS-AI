@@ -144,6 +144,144 @@ Measures how many different report pages are used during retrieval.
 
 ---
 
+# Installation & Setup
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/DPHS-AI.git
+cd DPHS-AI
+```
+
+---
+
+# Backend Setup (FastAPI)
+
+## Navigate to Backend Folder
+
+```bash
+cd backend
+```
+
+## Create Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Mac/Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Install Tesseract OCR
+
+Download and install Tesseract OCR from:
+
+[Tesseract OCR GitHub Repository](https://github.com/tesseract-ocr/tesseract?utm_source=chatgpt.com)
+
+After installation, configure the Tesseract path in your system if required.
+
+---
+
+## Add Groq API Key
+
+Create a `.env` file inside the backend folder:
+
+```env
+GROQ_API_KEY=your_api_key_here
+```
+
+---
+
+## Run FastAPI Backend
+
+```bash
+uvicorn app:app --reload
+```
+
+Backend runs at:
+
+```bash
+http://localhost:8000
+```
+
+---
+
+# Frontend Setup (Next.js)
+
+Open another terminal:
+
+```bash
+cd frontend
+```
+
+---
+
+## Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run Frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs at:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# How to Use
+
+## Step 1: Upload Medical Report
+
+Upload PDF reports through the dashboard interface.
+
+---
+
+## Step 2: Generate Report
+
+The RAG system retrieves relevant medical information and generates structured output.
+
+---
+
+## Step 3: Ask Clinical Questions
+
+Example queries:
+
+- What abnormalities are present?  
+- What possible conditions are indicated?  
+- Summarize this report  
+
+---
+
+
+---
+
 # Current Limitations
 
 - Primarily optimized for laboratory reports  
