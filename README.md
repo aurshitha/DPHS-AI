@@ -2,7 +2,7 @@
 
 ## Overview
 
-**DPHS-AI (Dynamic Patient Health Synthesis using AI)** is a prototype clinical decision support system that uses **Retrieval-Augmented Generation (RAG)** to synthesize fragmented medical records and generate actionable clinical insights.
+**DPHS-AI (Doctor Patient Healthcare System using AI)** is a prototype clinical decision support system that uses **Retrieval-Augmented Generation (RAG)** to synthesize fragmented medical records and generate actionable clinical insights.
 
 The project addresses the challenge of healthcare professionals spending significant time reviewing scattered patient documents such as laboratory reports, prescriptions, and diagnostic records before making clinical decisions.
 
@@ -261,13 +261,9 @@ http://localhost:3000
 
 Upload PDF reports through the dashboard interface.
 
----
-
 ## Step 2: Generate Report
 
 The RAG system retrieves relevant medical information and generates structured output.
-
----
 
 ## Step 3: Ask Clinical Questions
 
@@ -275,9 +271,11 @@ Example queries:
 
 - What abnormalities are present?  
 - What possible conditions are indicated?  
-- Summarize this report  
-
----
+- Summarize this report
+- Which values are outside normal range and why are they concerning?
+- Are AST and ALT elevated?
+- Is bilirubin level abnormal?
+- Are total cholesterol levels normal?
 
 
 ---
