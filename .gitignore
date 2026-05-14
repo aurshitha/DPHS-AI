@@ -22,3 +22,5 @@ uploads/
 
 # Logs
 temp_files
+
+.vscode/
