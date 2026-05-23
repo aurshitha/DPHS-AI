@@ -31,8 +31,8 @@ DPHS-AI addresses these challenges through an intelligent retrieval and summariz
 ✅ Upload medical PDF reports  
 
 ✅ Extract text from:
-    - Text-based PDFs  
-    - Scanned PDFs using OCR (**Tesseract OCR**)  
+ - Text-based PDFs
+ - Scanned PDFs using OCR (**Tesseract OCR**)
 
 ✅ Medical report preprocessing and chunking  
 
