@@ -125,11 +125,11 @@ The project follows two major phases:
 
 The RAG system is currently evaluated using:
 
-## Grounding Score
+ ## 1. Grounding Score
 Measures whether generated responses are supported by retrieved context.
 <!-- **Purpose:** Helps reduce hallucinations.-->
 
-## Diversity Score
+ ## 2. Diversity Score
 Measures how many different report pages are used during retrieval.
 <!--**Purpose:** Helps evaluate retrieval coverage.-->
 
@@ -145,13 +145,13 @@ cd DPHS-AI
 
 # Backend Setup (FastAPI)
 
-## Navigate to Backend Folder
+## 1. Navigate to Backend Folder
 
 ```bash
 cd backend
 ```
 
-## Create Virtual Environment
+## 2. Create Virtual Environment
 
 ### Windows
 
@@ -168,13 +168,13 @@ source venv/bin/activate
 ```
 
 
-## Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Install Tesseract OCR
+## 4. Install Tesseract OCR
 
 Download and install Tesseract OCR from:
 
@@ -183,7 +183,7 @@ Download and install Tesseract OCR from:
 After installation, configure the Tesseract path in your system if required.
 
 
-## Add Groq API Key
+## 5. Add Groq API Key
 
 Create a `.env` file inside the backend folder:
 
@@ -192,7 +192,7 @@ GROQ_API_KEY=your_api_key_here
 ```
 
 
-## Run FastAPI Backend
+## 6. Run FastAPI Backend
 
 ```bash
 uvicorn app:app --reload
@@ -213,14 +213,14 @@ Open another terminal:
 cd frontend
 ```
 
-## Install Frontend Dependencies
+## 1. Install Frontend Dependencies
 
 ```bash
 npm install
 ```
 
 
-## Run Frontend
+## 2. Run Frontend
 
 ```bash
 npm run dev
