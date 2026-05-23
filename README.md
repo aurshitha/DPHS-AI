@@ -25,32 +25,31 @@ Healthcare data is often distributed across multiple reports, visits, and depart
 
 DPHS-AI addresses these challenges through an intelligent retrieval and summarization pipeline.
 
----
 
-# Current Features (Implemented)
+# Current Features
 
 ✅ Upload medical PDF reports  
 
 ✅ Extract text from:
-- Text-based PDFs  
-- Scanned PDFs using OCR (**Tesseract OCR**)  
+    - Text-based PDFs  
+    - Scanned PDFs using OCR (**Tesseract OCR**)  
 
 ✅ Medical report preprocessing and chunking  
 
 ✅ Page-level metadata preservation  
 
 ✅ Embedding generation using:
-- `all-MiniLM-L6-v2`
+    - `all-MiniLM-L6-v2`
 
 ✅ Vector storage using:
-- `FAISS`
+    - `FAISS`
 
 ✅ Hybrid retrieval mechanism:
-- Semantic similarity search  
-- Keyword matching  
-- Structured data boosting  
-- Section weighting  
-- Numeric density scoring  
+   - Semantic similarity search  
+   - Keyword matching  
+   - Structured data boosting  
+   - Section weighting  
+   - Numeric density scoring  
 
 ✅ Context stitching across multiple report pages  
 
@@ -62,7 +61,6 @@ DPHS-AI addresses these challenges through an intelligent retrieval and summariz
 
 ✅ Next.js frontend dashboard  
 
----
 
 # System Architecture
 
@@ -78,7 +76,6 @@ The project follows two major phases:
 - Embedding generation  
 - FAISS vector storage  
 
----
 
 ## 2. Retrieval + Generation Phase
 - User query/report request  
@@ -88,7 +85,6 @@ The project follows two major phases:
 - LLM generation  
 - Final clinical response  
 
----
 
 # Tech Stack
 
@@ -98,7 +94,8 @@ The project follows two major phases:
 - FAISS  
 - Sentence Transformers  
 - PyMuPDF  
-- Tesseract OCR  
+- Tesseract OCR
+- EasyOCR
 
 ## Frontend
 - Next.js  
@@ -108,7 +105,6 @@ The project follows two major phases:
 ## LLM Integration
 - Groq API  
 
----
 
 # Project Workflow
 
@@ -124,7 +120,6 @@ The project follows two major phases:
 10. Labeled context is sent to the LLM  
 11. Final response is generated  
 
----
 
 # Evaluation Metrics
 
@@ -132,17 +127,12 @@ The RAG system is currently evaluated using:
 
 ## Grounding Score
 Measures whether generated responses are supported by retrieved context.
-
-**Purpose:** Helps reduce hallucinations.
-
----
+<!-- **Purpose:** Helps reduce hallucinations.-->
 
 ## Diversity Score
 Measures how many different report pages are used during retrieval.
+<!--**Purpose:** Helps evaluate retrieval coverage.-->
 
-**Purpose:** Helps evaluate retrieval coverage.
-
----
 
 # Installation & Setup
 
@@ -152,8 +142,6 @@ Measures how many different report pages are used during retrieval.
 git clone https://github.com/your-username/DPHS-AI.git
 cd DPHS-AI
 ```
-
----
 
 # Backend Setup (FastAPI)
 
@@ -179,15 +167,12 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
----
 
 ## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ## Install Tesseract OCR
 
@@ -197,7 +182,6 @@ Download and install Tesseract OCR from:
 
 After installation, configure the Tesseract path in your system if required.
 
----
 
 ## Add Groq API Key
 
@@ -207,7 +191,6 @@ Create a `.env` file inside the backend folder:
 GROQ_API_KEY=your_api_key_here
 ```
 
----
 
 ## Run FastAPI Backend
 
@@ -221,7 +204,6 @@ Backend runs at:
 http://localhost:8000
 ```
 
----
 
 # Frontend Setup (Next.js)
 
@@ -231,15 +213,12 @@ Open another terminal:
 cd frontend
 ```
 
----
-
 ## Install Frontend Dependencies
 
 ```bash
 npm install
 ```
 
----
 
 ## Run Frontend
 
@@ -252,8 +231,6 @@ Frontend runs at:
 ```bash
 http://localhost:3000
 ```
-
----
 
 # How to Use
 
@@ -276,7 +253,6 @@ Example queries:
 - Are AST and ALT elevated?
 - Is bilirubin level abnormal?
 - Are total cholesterol levels normal?
-
 
 ---
 
@@ -324,13 +300,13 @@ The project includes an interactive dashboard with:
 
 ---
 
-# Research Motivation
+<!--# Research Motivation
 
 Studies indicate that clinicians spend substantial time navigating fragmented healthcare systems. Research also shows that a significant percentage of healthcare professionals are open to AI-assisted systems, but current tools remain disconnected from real workflow environments.
 
 DPHS-AI was developed as a prototype to demonstrate how RAG can bridge this gap.
 
----
+--- -->
 
 # Project Status
 
